@@ -1,0 +1,11 @@
+[Unit]
+Description=backend service
+
+[Service]
+WorkingDirectory=/backend
+ExecStart=/backend/start.sh
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
